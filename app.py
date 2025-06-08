@@ -561,3 +561,7 @@ st.markdown("Energy Source: https://www.kaggle.com/datasets/anshtanwar/global-da
 st.markdown("Country Source: https://www.kaggle.com/datasets/andradaolteanu/country-mapping-iso-continent-region")
 st.markdown("World Bank, International Energy Agency, and ourworldindata.org")
 st.markdown("The data is gathered from websites including World Bank and International Energy Agency. The majority of it is collected from this site https://ourworldindata.org/sdgs/affordable-clean-energy. Some of the columns/features are taken from other top Kaggle datasets.")
+
+st.markdown("---") # Add a separator before the footer
+st.markdown("© 2025 Holly Nereson. All rights reserved.")
+st.markdown("Built for **CU Boulder's DTSA 5304: Fundamentals of Data Visualization** course.")
