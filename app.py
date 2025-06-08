@@ -457,7 +457,7 @@ try:
         }
     ]
 
-    num_cols = 3
+    num_cols = 2
     cols = st.columns(num_cols)
     col_idx = 0
 
@@ -523,7 +523,9 @@ st.markdown("As with any analysis, this one contains a lot of data cleaning and 
 
 st.markdown("---")
 st.header("Final Evaluation ✅")
-st.markdown("I utilized a Thinkaloud evaluation with my husband and 2 of his collegues since they were in the renewable energy industry. I walked them through the dataset and each section. They gave their thoughts as we went which was so interesting as I do not work in renewable energy. Here were some insights:")
+st.markdown("**Evaluation Process:** We conducted a Think-Aloud evaluation to gather qualitative feedback on the visualization's clarity and effectiveness. I presented the interactive dashboard to the participants, walked them through each section, and encouraged them to voice their thoughts, interpretations, and any points of confusion as they explored the charts.")
+st.markdown("**Participants:** The evaluation involved three participants (my husband and 2 colleagues) with professional expertise in the renewable energy industry. Recruiting from this target audience provided valuable, domain-specific insights into the data's representation.")
+st.markdown("**Results and Refinements:** The evaluation was highly positive and confirmed the report's utility. Key feedback included:")
 st.markdown("* Energy generation is the best metric of energy development. Consumption or renewable energy share is more a metric for ability to convert or store efficiently.")
 st.markdown("* Many of these metrics include other forms of energy -not just electricity. Renewable energy is typically only used for electricity.")
 st.markdown("* Minor feedback on the correlation graphs going below 0% or above 100% with the trendline.")
@@ -542,7 +544,7 @@ st.markdown("* Surprisingly, China produces the most electricity from renewables
 st.markdown("* Central African countries' electricity is mostly from renewable energy.")
 
 st.markdown("3. **Evaluate Environmental Impact:**")
-st.markdown("* I was expecting there to be more of a clear correlation between low-carbon electricity generation and CO2 emissions. But this scatterplot shows that there is not much of a relationship.")
+st.markdown("* The relationship between low-carbon electricity share and CO₂ emissions per capita is not a simple negative correlation. This surprising result suggests that other factors, such as industrial output, transportation emissions, and total energy consumption, are significant contributors to a country's carbon footprint, and that decarbonizing electricity is only one piece of a larger puzzle.")
 
 st.markdown("4. **Identify Key Drivers:**")
 st.markdown("* Most of these required a log scale graph to make sense of the relationships. But none of the correlations seem surprising.")
