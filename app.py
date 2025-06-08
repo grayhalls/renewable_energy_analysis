@@ -242,6 +242,7 @@ try:
             labels={'Access to electricity (%)': 'Avg. Access to Electricity (%)'}
         )
         fig_access_continent_bar.update_layout(showlegend=False)
+        fig_access_continent_bar.update_traces(width=0.8)
         st.plotly_chart(fig_access_continent_bar, use_container_width=True)
 
     with col_access_bar2:
@@ -258,6 +259,7 @@ try:
             labels={'Access to clean fuels (%)': 'Avg. Clean Fuels Access (%)'}
         )
         fig_clean_fuels_continent_bar.update_layout(showlegend=False)
+        fig_clean_fuels_continent_bar.update_traces(width=0.8)
         st.plotly_chart(fig_clean_fuels_continent_bar, use_container_width=True)
 
 
@@ -309,7 +311,7 @@ try:
                 showlegend=False, 
                 margin=dict(l=10, r=10, t=50, b=10)
             )
-            fig_bar_2019.update_traces(texttemplate='%{y:.2s} TWh', textposition='outside')
+            fig_bar_2019.update_traces(texttemplate='%{y:.2s} TWh', textposition='outside', width=0.8)
 
             st.plotly_chart(fig_bar_2019, use_container_width=True)
         else:
@@ -413,6 +415,7 @@ try:
         labels={'CO2 emissions (metric tons per capita)': 'Avg. CO2 Emissions (metric tons/capita)'}
     )
     fig_co2_continent_bar.update_layout(showlegend=False)
+    fig_co2_continent_bar.update_traces(width=0.8)
     st.plotly_chart(fig_co2_continent_bar, use_container_width=True)
 
 
