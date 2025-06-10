@@ -567,4 +567,5 @@ st.markdown("The data is gathered from websites including World Bank and Interna
 
 st.markdown("---") # Add a separator before the footer
 st.markdown("© 2025 Holly Nereson. All rights reserved.")
+st.markdown("**github repository:** https://github.com/grayhalls/renewable_energy_analysis")
 st.markdown("Built for **CU Boulder's DTSA 5304: Fundamentals of Data Visualization** course.")
