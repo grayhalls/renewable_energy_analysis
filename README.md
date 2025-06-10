@@ -39,3 +39,4 @@ The data is sourced from the "Global Data on Sustainable Energy" dataset on Kagg
 - Plotly
 - Kagglehub
 - NumPy 
+- Statsmodels

@@ -319,6 +319,7 @@ try:
 
     st.markdown("---")
     st.subheader("Renewable Electricity Generation Share by Continent Over Time")
+    
     fig_renewable_calculated = px.line(
         comparison_agg_df, # Reusing the pre-calculated df
         x='Year',
@@ -331,6 +332,7 @@ try:
 
     st.markdown("---")
     st.subheader("Renewable Energy Across the Globe (2019): Generation Volume vs. Consumption Share") 
+    st.markdown("This is a good example of how only showing one of these graphs would lead to different interpretations.")
     col_map_left, col_map_right = st.columns(2)
 
     with col_map_left:
@@ -522,6 +524,7 @@ except Exception as e:
 st.header("Summary of Key Elements 📝")
 st.markdown("Most visuals used in this analysis were a combination of **bar and line charts**. This was intentional to clearly show trends over time or differences between categories. This dataset was well suited for these types of graphs in comparison to more statistical visuals such as box-whiskers or violin distributions. As it was a global dataset, the use of **chloropath maps** is a distinct feature.")
 st.markdown("To add an exploratory component, I added the **correlation scatterplots with trendlines** (utalizing OLS linear regression). These dynamic plots help in visually identifying potential relationships between various energy, economic, and environmental indicators across contries.")
+st.markdown("**Comparing different methods:** As I built all the visuals, I explored various graphs that could display the relationships between line, bar, scatterplots, etc. Honestly, they all have their place. Scatterplots were brilliant for showing nuanced data and true variation. Line graphs worked well for timeline analysis. Bar graphs are perfect for quick categorical comparisons. In my opinion, visualizations do not need to be complex and unique to be impactful. Users should be able to read and understand the data quickly, so they can move forward with making decisions.")
 st.markdown("As with any analysis, this one contains a lot of data cleaning and preperations. Specifically, the **% of Renewable Energy Generation** was calculated based on the generation volumes in the provided datasets. Missing values were removed for purity of the data. To empower users to dynamically explore the data, there is a sidebar with selectable filters for year range and continents.")
 
 st.markdown("---")
@@ -531,7 +534,8 @@ st.markdown("**Participants:** The evaluation involved three participants (my hu
 st.markdown("**Results and Refinements:** The evaluation was highly positive, confirming its usefulness. Key feedback included:")
 st.markdown("* Energy generation is the best metric of energy development. Consumption or renewable energy share is more a metric for ability to convert or store efficiently.")
 st.markdown("* Many of these metrics include other forms of energy -not just electricity. Renewable energy is typically only used for electricity.")
-st.markdown("* Minor feedback on the correlation graphs going below 0% or above 100% with the trendline.")
+st.markdown("* Overall, they understood the visuals and could quickly come up with conclusions or give context for the data. They liked that the visuals did not take long to interpret.")
+st.markdown("* Minor feedback on the correlation graphs going below 0% or above 100% with the trendline, which I updated.")
 st.markdown("* In section 2: Track Renewable Transition, they pointed out that it was difficult to see the breakdown between the energy generation mixes. I added a bar chart on the right to help with this.")
 
 st.markdown("---")
